@@ -36,9 +36,11 @@ Les résultats sont identiques pour la méthode historique et la méthode param�
 
 | Fichier | Description |
 |---|---|
+| `VaR_Portefeuille_TSLA_AMD_NVDA.ipynb` | Notebook Python complet : données, 4 méthodes de VaR, backtest initial, backtest hors échantillon, test de Kupiec, conclusion |
+| `prix_actions.csv`, `rendements.csv`, `portfolio_returns.csv` | Données exportées par la dernière cellule du notebook (prix de clôture, rendements par action, rendements du portefeuille) |
 | `Analyse_Risque_VaR_Portefeuille.pdf` / `.docx` | Dossier méthodologique (7 pages) : méthodes, code, résultats, limites |
-| `visuel_var.png`, `timeline_var.png` | Comparaison des méthodes et rendements du portefeuille avec dépassements |
-| `prix_actions.csv`, `rendements.csv`, `portfolio_returns.csv` | Données utilisées (prix de clôture, rendements, rendements du portefeuille) |
+| `visuel_var.png`, `timeline_var.png` | Figures de synthèse du dossier, générées hors notebook par les deux scripts ci-dessous |
+| `build_visual.py`, `build_timeline.py` | `build_visual.py` (résultats de VaR saisis dans le script) et `build_timeline.py` (lit `portfolio_returns.csv`). À lancer depuis ce dossier |
 
 ## Outils
 
@@ -53,4 +55,5 @@ Python (pandas, numpy, scipy, matplotlib), yfinance, notebook Google Colab.
 - Portefeuille de 3 valeurs technologiques corrélées, avec rééquilibrage quotidien parfait supposé : peu de diversification, résultats non généralisables.
 
 ---
+*Projet réalisé dans le cadre d'une recherche de stage/alternance en finance de marché (risk management, front office).*
 *Projet réalisé dans le cadre d'une recherche de stage/alternance en finance de marché (risk management, front office).*
